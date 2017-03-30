@@ -53,6 +53,15 @@ gulp.task('copy', () =>
     .pipe($.size({title: 'copy'}))
 );
 
+gulp.task('copy-ui', () =>
+  gulp.src([
+    'semantic/dist/**',
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist'))
+    .pipe($.size({title: 'copy'}))
+);
+
 // Compile and automatically prefix stylesheets
 gulp.task('styles', () => {
   const AUTOPREFIXER_BROWSERS = [
@@ -156,7 +165,7 @@ gulp.task('serve', ['scripts', 'styles'], () => {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
-    server: ['.tmp', 'app', 'node_modules', 'semantic'],
+    server: ['.tmp', 'app', 'node_modules', 'semantic/dist'],
     port: 3300
   });
 
@@ -187,7 +196,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy'],
+    ['lint', 'html', 'scripts', 'images', 'copy', 'copy-ui'],
     'generate-service-worker',
     cb
   )
