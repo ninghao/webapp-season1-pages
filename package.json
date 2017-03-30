@@ -1,0 +1,8 @@
+{
+  "name": "ninghao-web-flow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ninghao/ninghao-web-flow",
+  "author": "wanghao8080",
+  "license": "MIT"
+}
