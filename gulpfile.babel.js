@@ -15,6 +15,10 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import {output as pagespeed} from 'psi';
 import pkg from './package.json';
 
+// import semanitc-ui tasks
+import uiWatch from './semantic/tasks/watch';
+import uiBuild from './semantic/tasks/build';
+
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
@@ -136,19 +140,23 @@ gulp.task('html', () => {
 // Clean output directory
 gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git'], {dot: true}));
 
+// Semantic UI tasks
+gulp.task('watch-ui', uiWatch);
+gulp.task('build-ui', uiBuild);
+
 // Watch files for changes & reload
 gulp.task('serve', ['scripts', 'styles'], () => {
   browserSync({
     notify: false,
     // Customize the Browsersync console logging prefix
-    logPrefix: 'WSK',
+    logPrefix: 'NINGHAO',
     // Allow scroll syncing across breakpoints
     scrollElementMapping: ['main', '.mdl-layout'],
     // Run as an https by uncommenting 'https: true'
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
-    server: ['.tmp', 'app'],
+    server: ['.tmp', 'app', 'node_modules', 'semantic'],
     port: 3300
   });
 
@@ -156,6 +164,7 @@ gulp.task('serve', ['scripts', 'styles'], () => {
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts', reload]);
   gulp.watch(['app/images/**/*'], reload);
+  gulp.watch(['semantic/dist/**/*.{css,js}'], reload);
 });
 
 // Build and serve the output from the dist build
