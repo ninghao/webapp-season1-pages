@@ -11,6 +11,7 @@
 
   .header {
     align-self: center;
+    transition: all .5s;
   }
 
   .header > img {
@@ -21,6 +22,7 @@
 
   .menu {
     margin-left: 56px;
+    transition: all .4s;
   }
 
   .menu .item {
@@ -47,13 +49,17 @@
   .search-form {
     position: absolute;
     transform: translateY(-120px);
+    transition: all .5s;
+    opacity: 0;
   }
 
   .searching ~ .search-form {
     transform: translateY(-50px);
+    opacity: 1;
   }
 
   .searching .header, & .searching .menu {
     transform: translateY(80px);
+    opacity: 0;
   }
 }
