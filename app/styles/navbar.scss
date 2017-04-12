@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    position: relative;
+    overflow: hidden;
   }
 
   .header {
@@ -40,5 +42,18 @@
     text-align: right;
     align-self: center;
     cursor: pointer;
+  }
+
+  .search-form {
+    position: absolute;
+    transform: translateY(-120px);
+  }
+
+  .searching ~ .search-form {
+    transform: translateY(-50px);
+  }
+
+  .searching .header, & .searching .menu {
+    transform: translateY(80px);
   }
 }
