@@ -9,9 +9,9 @@
     .click(function () {
       let icon = $(this)
       if (icon.text() === 'search') {
-        icon.text('close')
+        icon.text('close').parents('.content').addClass('searching')
       } else {
-        icon.text('search')
+        icon.text('search').parents('.content').removeClass('searching')
       }
     })
 
