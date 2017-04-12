@@ -7,9 +7,14 @@
     align-items: flex-end;
   }
 
+  .header {
+    align-self: center;
+  }
+
   .header > img {
     padding: 8px;
     width: 98px;
+    box-sizing: content-box;
   }
 
   .menu {
