@@ -34,4 +34,10 @@
   .menu .item.active {
     border-bottom: 2px solid #000;
   }
+
+  .search-icon {
+    flex-grow: 1;
+    text-align: right;
+    align-self: center;
+  }
 }
