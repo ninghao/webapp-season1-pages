@@ -11,4 +11,22 @@
     padding: 8px;
     width: 98px;
   }
+
+  .menu {
+    margin-left: 56px;
+  }
+
+  .menu .item {
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 32px;
+    padding-top: 24px;
+  }
+
+  .menu .item.active {
+    border-bottom: 2px solid #000;
+  }
 }
