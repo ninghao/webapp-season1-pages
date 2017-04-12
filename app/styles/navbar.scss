@@ -1,6 +1,12 @@
 .ui.navbar {
   background: #fff;
 
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
   .header > img {
     padding: 8px;
     width: 98px;
