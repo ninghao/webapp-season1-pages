@@ -79,3 +79,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .ui.navbar {
+    .header > img {
+      width: 56px;
+    }
+
+    .content {
+      justify-content: space-between;
+    }
+
+    .content .menu {
+      display: none;
+    }
+
+    .search-icon {
+      flex-grow: 0;
+    }
+  }
+}
