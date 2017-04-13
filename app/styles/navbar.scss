@@ -9,6 +9,14 @@
     overflow: hidden;
   }
 
+  .menu-icon {
+    align-self: center;
+  }
+
+  .menu-icon i {
+    cursor: pointer;
+  }
+
   .header {
     align-self: center;
     transition: all .5s;
@@ -61,5 +69,13 @@
   .searching .header, & .searching .menu {
     transform: translateY(80px);
     opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .ui.navbar {
+    .menu-icon {
+      display: none;
+    }
   }
 }
