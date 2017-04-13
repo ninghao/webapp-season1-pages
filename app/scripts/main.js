@@ -15,4 +15,10 @@
       }
     })
 
+  /**
+   * sidebar
+   */
+  $('.ui.sidebar')
+    .sidebar('attach events', '.ui.navbar .menu-icon')
+
 })();
