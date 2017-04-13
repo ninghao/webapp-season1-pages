@@ -21,4 +21,12 @@
       background: #fbfbfb;
     }
   }
+
+  .close-icon {
+    height: 50px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
 }
