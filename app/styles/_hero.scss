@@ -1,0 +1,21 @@
+.ui.hero {
+  background: #f0f0f0;
+
+  .item {
+    .content {
+      // height: 600px;
+      display: flex;
+      align-items: center;
+      padding-top: 12%;
+      padding-bottom: 16%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .item {
+      .content {
+        height: 600px;
+      }
+    }
+  }
+}
