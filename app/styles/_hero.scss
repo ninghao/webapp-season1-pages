@@ -2,12 +2,19 @@
   background: #f0f0f0;
 
   .item {
+    position: relative;
+    overflow: hidden;
+
     .content {
       // height: 600px;
       display: flex;
       align-items: center;
       padding-top: 12%;
       padding-bottom: 16%;
+    }
+
+    .container {
+      z-index: 1;
     }
 
     .header {
@@ -27,6 +34,14 @@
       font-size: 18px;
       margin-bottom: 32px;
       font-weight: 600;
+    }
+
+    .image {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
     }
   }
 
