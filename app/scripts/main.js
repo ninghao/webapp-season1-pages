@@ -27,4 +27,10 @@
     .clone()
     .appendTo('.ui.sidebar')
 
+  /**
+   * slick carousel
+   */
+  $('.ui.hero.carousel')
+    .slick()
+
 })();
