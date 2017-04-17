@@ -35,6 +35,15 @@
       // arrows: false,
       prevArrow: '<button class="ui prev button"><i class="material-icons">chevron_left</i></button>',
       nextArrow: '<button class="ui next button"><i class="material-icons">chevron_right</i></button>',
+
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            dots: true
+          }
+        }
+      ]
     })
 
 })();
