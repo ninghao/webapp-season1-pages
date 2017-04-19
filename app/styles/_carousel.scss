@@ -1,4 +1,4 @@
-.ui.hero.carousel {
+.ui.carousel {
   .prev.button {
     left: 24px;
   }
@@ -10,15 +10,21 @@
   .prev.button, .next.button {
     position: absolute;
     z-index: 3;
-    bottom: 0;
+    top: 50%;
+    margin-top: -16px;
     padding: 0;
-    margin-bottom: 24px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     text-align: center;
     background: rgba(255, 255, 255, 0.4);
     color: rgba(0, 0, 0, 0.4);
+
+    &.bottom {
+      top: auto;
+      bottom: 0;
+      margin-bottom: 24px;
+    }
   }
 
   .prev.button:hover, .next.button:hover {
