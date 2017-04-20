@@ -43,4 +43,32 @@
       margin: auto;
     }
   }
+
+  @media only screen and (max-width: 767px) {
+    .content {
+      .description {
+        display: none;
+      }
+
+      .action {
+        display: none;
+      }
+
+      .header {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header::after {
+        display: block;
+        content: "";
+        width: 90px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 8px;
+      }
+    }
+  }
 }
