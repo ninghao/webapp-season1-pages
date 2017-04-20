@@ -3,7 +3,44 @@
 
   @include aspect-ratio(16, 9);
 
+  .content {
+    width: 50.5%;
+    z-index: 1;
+    background: rgba(237, 237, 237, 0.85);
+    border-right: 8px solid #f8f8f8;
+    padding: 14% 40px 14% 8%;
+
+    .sub.header {
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .header {
+      font-size: 36px;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+
+    .description {
+      margin-bottom: 40px;
+      line-height: 1.8;
+
+      p {
+        line-height: 1.8;
+      }
+    }
+  }
+
   .image {
-    display: none;
+    > img {
+      width: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
   }
 }
