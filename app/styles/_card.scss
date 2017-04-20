@@ -20,7 +20,7 @@
       margin: 0;
       margin-bottom: 24px;
 
-      :after {
+      ::after {
         content: " ";
         display: block;
         border-bottom: 2px solid #000;
