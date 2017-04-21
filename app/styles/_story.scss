@@ -81,6 +81,10 @@
     flex-direction: column;
     padding-bottom: 12%;
 
+    .item {
+      outline: none;
+    }
+
     .content {
       text-align: center;
       padding: 10%;
