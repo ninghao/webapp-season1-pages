@@ -74,4 +74,56 @@
       }
     }
   }
+
+  &.vertical {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12%;
+
+    .content {
+      text-align: center;
+      padding: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .header {
+        font-size: 36px;
+        margin-bottom: 32px;
+      }
+
+      .description {
+        width: 70%;
+        font-size: 20px;
+        line-height: 1.5;
+
+        p {
+          line-height: 1.5;
+        }
+
+        font-family: "PingFangSC-Ultralight";
+        color: rgba(0, 0, 0, .5);
+      }
+    }
+
+    .image {
+      > img {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .content {
+        .header {
+          font-size: 24px;
+        }
+
+        .description {
+          width: 85%;
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
