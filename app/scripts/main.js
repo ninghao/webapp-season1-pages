@@ -71,4 +71,16 @@
       ],
     })
 
+  /**
+   * bottom
+   */
+  enquire.register("screen and (max-width: 767px)", {
+    match() {
+      console.log('匹配')
+    },
+    unmatch() {
+      console.log('不匹配')
+    }
+  })
+
 })();
