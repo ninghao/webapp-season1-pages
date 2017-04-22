@@ -1,0 +1,17 @@
+.ui.accordion {
+  .header {
+    cursor: pointer;
+  }
+
+  .content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .block {
+    border-bottom: 1px solid #ededed;
+  }
+}

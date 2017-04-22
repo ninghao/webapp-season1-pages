@@ -76,10 +76,19 @@
    */
   enquire.register("screen and (max-width: 767px)", {
     match() {
-      console.log('匹配')
+      $('.ui.bottom')
+        .addClass('accordion')
+        .accordion({
+          selector: {
+            title: '.header',
+            trigger: '.header',
+            content: '.content'
+          }
+        })
     },
     unmatch() {
-      console.log('不匹配')
+      $('.ui.bottom')
+        .removeClass('accordion')
     }
   })
 
