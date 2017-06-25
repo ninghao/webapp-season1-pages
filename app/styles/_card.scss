@@ -1,0 +1,48 @@
+.ui.card {
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow .5s;
+
+  &:hover {
+    box-shadow: 0 32px 48px rgba(0, 0, 0, 0.06);
+  }
+
+  .image > img {
+    width: 100%;
+  }
+
+  .content {
+    padding: 40px;
+    padding-bottom: 56px;
+
+    > .header {
+      font-size: 24px;
+      margin: 0;
+      margin-bottom: 24px;
+
+      ::after {
+        content: " ";
+        display: block;
+        border-bottom: 2px solid #000;
+        width: 40px;
+        padding-bottom: 8px;
+      }
+    }
+
+    .sub.header {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .description {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.ui.cards {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

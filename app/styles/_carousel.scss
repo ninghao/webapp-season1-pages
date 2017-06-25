@@ -1,0 +1,57 @@
+.ui.carousel {
+  .prev.button {
+    left: 24px;
+  }
+
+  .next.button {
+    right: 24px;
+  }
+
+  .prev.button, .next.button {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    margin-top: -16px;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    color: rgba(0, 0, 0, 0.4);
+
+    &.bottom {
+      top: auto;
+      bottom: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  .prev.button:hover, .next.button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.2);
+  }
+
+  .slick-dots {
+    bottom: 32px;
+  }
+  // .slick-prev {
+  //   left: 24px;
+  // }
+  //
+  // .slick-next {
+  //   right: 24px;
+  // }
+  //
+  // .slick-prev, .slick-next {
+  //   z-index: 3;
+  //   top: auto;
+  //   bottom: 0;
+  // }
+}
+
+.ui.vertical.story {
+  .slick-dots {
+    bottom: -48px;
+  }
+}

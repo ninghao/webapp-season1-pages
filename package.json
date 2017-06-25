@@ -35,6 +35,9 @@
     "sw-toolbox": "^3.2.1"
   },
   "dependencies": {
-    "semantic-ui": "^2.2.10"
+    "enquire.js": "^2.1.6",
+    "material-design-icons": "^3.0.1",
+    "semantic-ui": "^2.2.10",
+    "slick-carousel": "^1.6.0"
   }
 }

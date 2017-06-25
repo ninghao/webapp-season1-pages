@@ -1,0 +1,120 @@
+.ui.hero {
+  background: #f0f0f0;
+
+  .item {
+    position: relative;
+    overflow: hidden;
+
+    .content {
+      // height: 600px;
+      display: flex;
+      align-items: center;
+      height: 80vh;
+      max-height: 750px;
+      min-height: 350px;
+    }
+
+    .container {
+      z-index: 1;
+    }
+
+    .header {
+      font-size: 48px;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+
+    .sub.header {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 18px;
+      margin-bottom: 32px;
+      font-weight: 600;
+    }
+
+    .image {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 80vh;
+      object-fit: cover;
+      max-height: 750px;
+      min-height: 350px;
+    }
+
+    .action {
+      margin-bottom: 32px;
+    }
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .big {
+    .header {
+      font-size: 56px;
+      letter-spacing: 8px;
+    }
+
+    .sub.header {
+      font-size: 24px;
+      letter-spacing: 16px;
+      font-family: "PingFangSC-Ultralight"
+    }
+  }
+
+  .bottom {
+    .content {
+      align-items: flex-end;
+      padding-bottom: 4%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .image {
+        position: inherit;
+        order: 1;
+        height: auto;
+      }
+
+      .content {
+        order: 2;
+        height: auto;
+        color: #000;
+        align-items: center;
+      }
+
+      .header {
+        font-size: 36px;
+        letter-spacing: 4px;
+      }
+
+      .sub.header {
+        font-size: 16px;
+        letter-spacing: 8px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .item {
+      .content {
+
+      }
+    }
+  }
+}

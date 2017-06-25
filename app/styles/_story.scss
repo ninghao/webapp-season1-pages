@@ -1,0 +1,133 @@
+.ui.story {
+
+  &.horizontal {
+    background: #ededed;
+
+    @include aspect-ratio(16, 9);
+
+    .content {
+      width: 50.5%;
+      z-index: 1;
+      background: rgba(237, 237, 237, 0.85);
+      border-right: 8px solid #f8f8f8;
+      padding: 14% 40px 14% 8%;
+
+      .sub.header {
+        font-size: 14px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+
+      .header {
+        font-size: 36px;
+        margin: 0;
+        margin-bottom: 40px;
+      }
+
+      .description {
+        margin-bottom: 40px;
+        line-height: 1.8;
+
+        p {
+          line-height: 1.8;
+        }
+      }
+    }
+
+    .image {
+      > img {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .content {
+        .description {
+          display: none;
+        }
+
+        .action {
+          display: none;
+        }
+
+        .header {
+          font-size: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .header::after {
+          display: block;
+          content: "";
+          width: 90px;
+          border-bottom: 1px solid #000;
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  &.vertical {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12%;
+
+    .item {
+      outline: none;
+    }
+
+    .content {
+      text-align: center;
+      padding: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .header {
+        font-size: 36px;
+        margin-bottom: 32px;
+      }
+
+      .description {
+        width: 70%;
+        font-size: 20px;
+        line-height: 1.5;
+
+        p {
+          line-height: 1.5;
+        }
+
+        font-family: "PingFangSC-Ultralight";
+        color: rgba(0, 0, 0, .5);
+      }
+    }
+
+    .image {
+      > img {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .content {
+        .header {
+          font-size: 24px;
+        }
+
+        .description {
+          width: 85%;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

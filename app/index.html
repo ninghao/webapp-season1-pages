@@ -4,17 +4,359 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>宁皓</title>
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link rel="stylesheet" href="material-design-icons/iconfont/material-icons.css">
   <link rel="stylesheet" href="components/reset.css">
   <link rel="stylesheet" href="components/site.css">
   <link rel="stylesheet" href="components/container.css">
   <link rel="stylesheet" href="components/grid.css">
+  <link rel="stylesheet" href="components/input.css">
+  <link rel="stylesheet" href="components/sidebar.css">
+  <link rel="stylesheet" href="components/button.css">
+  <link rel="stylesheet" href="slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" href="slick-carousel/slick/slick-theme.css"/>
   <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+ <body>
 
+  <div class="ui sidebar">
+    <div class="close-icon">
+      <i class="material-icons">close</i>
+    </div>
+  </div>
+  <div class="pusher">
+    <div class="ui navbar">
+      <div class="ui container">
+        <div class="content">
+          <div class="menu-icon">
+            <i class="material-icons">menu</i>
+          </div>
+          <a href="#" class="header">
+            <img src="images/logo.png" alt="">
+          </a>
+          <div class="menu">
+            <a href="#" class="item active">车型</a>
+            <a href="#" class="item">故事</a>
+            <a href="#" class="item">体验</a>
+            <a href="#" class="item">经销商</a>
+          </div>
+          <div class="search-icon">
+            <i class="material-icons">search</i>
+          </div>
+        </div>
+        <form action="" class="search-form">
+          <div class="ui big transparent input">
+            <input type="text" placeholder="搜索...">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="ui hero carousel">
+      <div class="item">
+        <div class="content">
+          <div class="ui container">
+            <div class="sub header">
+              Discovery
+            </div>
+            <h2 class="header">
+              全新一代发现
+            </h2>
+            <div class="description">
+              全尺寸七座 SUV，现已接受预订。
+            </div>
+            <div class="action">
+              <a href="#" class="ui big black button">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <img class="image" src="images/L462_17_EXT_LOC93_07_desktop_1600x900_305-304360_1600x900.jpg" alt="">
+      </div>
+      <div class="item">
+        <div class="content">
+          <div class="ui container">
+            <div class="sub header">
+              Landrover
+            </div>
+            <h2 class="header">
+              全新揽胜星脉。
+            </h2>
+            <div class="description">
+              标新立异的前卫揽胜。
+            </div>
+            <div class="action">
+              <a href="#" class="ui big black button">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <img class="image" src="images/L560_18MY_318_GLHD_DX_Device-Desktop_1600x900_295-292857_1600x900.jpg" alt="">
+      </div>
+      <div class="item">
+        <div class="content">
+          <div class="ui container">
+            <div class="sub header">
+              Discovery
+            </div>
+            <h2 class="header">
+              发现神行
+            </h2>
+            <div class="description">
+              发现的绝佳时刻。
+            </div>
+            <div class="action">
+              <a href="#" class="ui big black button">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <img class="image" src="images/L550-Q3-KV-1600-x-900_305-275201_1600x900.jpg" alt="">
+      </div>
+    </div>
+    <div class="ui cards">
+      <div class="ui container">
+        <div class="ui three column stackable doubling grid">
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <img src="images/range-rover-680x450.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3 class="header">
+                  揽胜
+                  <div class="sub header">Range Rover</div>
+                </h3>
+
+                <div class="description">无与伦比，世界顶级奢华SUV的极致巅峰</div>
+                <div class="meta">RMB 1,588,000 起</div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <img src="images/ranger-rover-sport-680x450.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3 class="header">
+                  揽胜运动
+                  <div class="sub header">Range Rover Sport</div>
+                </h3>
+                <div class="description">越界动能，运动型豪华SUV的至高典范</div>
+                <div class="meta">RMB 928,000 起</div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <img src="images/range-rover-velar-680x450.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3 class="header">
+                  揽胜星脉
+                  <div class="sub header">Range Rover Velar</div>
+                </h3>
+                <div class="description">路虎精湛、强大的中级SUV</div>
+                <div class="meta">RMB 1,588,000 起</div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <img src="images/range-rover-evoque-680x450.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3 class="header">
+                  揽胜极光
+                  <div class="sub header">Range Rover Evoque</div>
+                </h3>
+                <div class="description">时尚豪华全地形SUV</div>
+                <div class="meta"> RMB 398,000 起</div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <img src="images/land-rover-discovery-680x450.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3 class="header">
+                  发现
+                  <div class="sub header">Discovery</div>
+                </h3>
+                <div class="description">全能全尺寸豪华SUV</div>
+                <div class="meta">RMB 798,000 起</div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <img src="images/land-rover-discovery-sport-680x450.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3 class="header">
+                  发现神行
+                  <div class="sub header">Discovery Sport</div>
+                </h3>
+                <div class="description">全能全地形豪华SUV</div>
+                <div class="meta"> RMB 368,000起</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui horizontal story">
+      <div class="content">
+        <div class="sub header">Story</div>
+        <h2 class="header">揽胜历史</h2>
+        <div class="description">
+          在过去的45年里，揽胜创造了一系列汽车工业举足轻重的技术突破。到了今天，它已成为我们众所周知的巅峰级奢华汽车。
+        </div>
+        <div class="action">
+          <a href="" class="ui big basic black button">了解更多</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/range-rover-classic-1970-1600x900.jpg" alt="">
+      </div>
+    </div>
+    <div class="ui vertical story">
+      <div class="ui carousel for">
+        <div class="item">
+          <div class="content">
+            <h2 class="header">全球远征</h2>
+            <div class="description">
+              苏格兰，摩洛哥，西班牙...
+              路虎与 Abercrombie &amp; Kent 旅游公司
+              策划的超级之旅。
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <h2 class="header">上海车展</h2>
+            <div class="description">
+             标新立异的前卫揽胜，迄今为止家族最美 SUV，
+             一出场，便惊艳全场。是简约风格成就了不简单的星脉，
+             还是60余载英伦血统铸就了现在无畏的英雄气概。
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <h2 class="header">发现无止境</h2>
+            <div class="description">
+              路虎，遍布世界人迹罕至之地，
+              为世人带去发现未知的精神和勇气，
+              至前所未至，经前所未经。</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <h2 class="header">湖州体验中心</h2>
+            <div class="description">
+              亚洲最大的路虎体验中心，
+              坐落于浙江省湖州德清县裸心谷，
+              其得天独厚的1000余亩竹海茶丘和跌宕起伏的险峻地貌，令所有体验项目均与天然路况配合得丝丝入扣。
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui carousel nav">
+        <div class="item">
+          <div class="image">
+            <img src="images/ex-discovery.jpg">
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="images/ex-range-velar.jpg">
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="images/ex-discovery-nsd.jpg">
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="images/ex-huzhou.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui bottom">
+      <div class="ui container">
+        <div class="ui five column stackable grid">
+          <div class="column">
+            <div class="block">
+              <h3 class="header">关于</h3>
+              <div class="content">
+                <div class="list">
+                  <div class="item">新闻</div>
+                  <div class="item">企业责任</div>
+                  <div class="item">销售及服务</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <h3 class="header">下载</h3>
+              <div class="content">
+                <div class="list">
+                  <div class="item">产品手册</div>
+                  <div class="item">操作指南</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <h3 class="header">服务</h3>
+              <div class="content">
+                <div class="list">
+                  <div class="item">车主服务</div>
+                  <div class="item">认证二手车</div>
+                  <div class="item">金融服务</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <h3 class="header">申请</h3>
+              <div class="content">
+                <div class="list">
+                  <div class="item">申请试驾</div>
+                  <div class="item">申请经销商</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="block">
+              <h3 class="header">关注</h3>
+              <div class="content">
+                <div class="list">
+                  <div class="item">微博</div>
+                  <div class="item">微信</div>
+                  <div class="item">豆瓣</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="jquery/dist/jquery.min.js" charset="utf-8"></script>
   <script src="semantic.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="slick-carousel/slick/slick.min.js"></script>
+  <script src="enquire.js/dist/enquire.min.js" charset="utf-8"></script>
   <script src="scripts/main.js" charset="utf-8"></script>
 </body>
 </html>
