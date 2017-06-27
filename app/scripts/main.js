@@ -87,6 +87,30 @@
       ],
     })
 
+  $('#exterior-design .carousel.text')
+    .slick({
+      asNavFor: '#exterior-design .carousel.image',
+      arrows: false,
+      slidesToShow: 1,
+    })
+
+  $('#exterior-design .carousel.image')
+    .slick({
+      asNavFor: '#exterior-design .carousel.text',
+      slidesToShow: 2,
+      dots: true,
+      prevArrow: '<button class="ui prev button"><i class="material-icons">chevron_left</i></button>',
+      nextArrow: '<button class="ui next button"><i class="material-icons">chevron_right</i></button>',
+      // centerMode: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ],
+    })
   /**
    * bottom
    */

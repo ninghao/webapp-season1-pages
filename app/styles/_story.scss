@@ -94,7 +94,15 @@
 
       .header {
         font-size: 36px;
+        margin-top: 0;
         margin-bottom: 32px;
+      }
+
+      .sub.header {
+        font-size: 14px;
+        margin-bottom: 8px;
+        letter-spacing: 3px;
+        color: rgba(0, 0, 0, 0.5);
       }
 
       .description {
