@@ -1,4 +1,30 @@
 .ui.story {
+  &.block {
+    margin-bottom: 8%;
+
+    .content {
+      margin-bottom: 8%;
+
+      .header {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+
+      .description {
+        font-size: 18px;
+        line-height: 1.5;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      @media only screen and (max-width: 767px) {
+        margin: 4%;
+
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 
   &.horizontal {
     background: #ededed;
