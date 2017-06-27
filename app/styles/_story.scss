@@ -1,4 +1,8 @@
 .ui.story {
+  &.white {
+    background: #fff;
+  }
+
   &.block {
     margin-bottom: 8%;
 
@@ -102,10 +106,15 @@
   }
 
   &.vertical {
-    background: #fff;
     display: flex;
     flex-direction: column;
     padding-bottom: 12%;
+
+    ~ .vertical {
+      .content {
+        padding-top: 0;
+      }
+    }
 
     .item {
       outline: none;
