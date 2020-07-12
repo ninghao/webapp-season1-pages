@@ -1,4 +1,34 @@
 .ui.story {
+  &.white {
+    background: #fff;
+  }
+
+  &.block {
+    margin-bottom: 8%;
+
+    .content {
+      margin-bottom: 8%;
+
+      .header {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+
+      .description {
+        font-size: 18px;
+        line-height: 1.5;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      @media only screen and (max-width: 767px) {
+        margin: 4%;
+
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 
   &.horizontal {
     background: #ededed;
@@ -76,10 +106,15 @@
   }
 
   &.vertical {
-    background: #fff;
     display: flex;
     flex-direction: column;
     padding-bottom: 12%;
+
+    ~ .vertical {
+      .content {
+        padding-top: 0;
+      }
+    }
 
     .item {
       outline: none;
@@ -94,7 +129,15 @@
 
       .header {
         font-size: 36px;
+        margin-top: 0;
         margin-bottom: 32px;
+      }
+
+      .sub.header {
+        font-size: 14px;
+        margin-bottom: 8px;
+        letter-spacing: 3px;
+        color: rgba(0, 0, 0, 0.5);
       }
 
       .description {
