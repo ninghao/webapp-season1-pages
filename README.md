@@ -2,6 +2,11 @@
 
 最近我简化了这个项目的开发流程，只保留了一个依赖，让大家可以专注做页面设计。简化开发流程之后的项目地址：[https://github.com/ninghao/landrover-ui](https://github.com/ninghao/landrover-ui)
 
+**演示地址**：[_https://demo.ninghao.net/landrover-ui_](https://demo.ninghao.net/landrover-ui)
+**课程地址**：_https://ninghao.net/package/website_
+
+![演示](https://raw.githubusercontent.com/ninghao/landrover-ui/master/images/landrover-demo.jpg)
+
 ## 环境
 
 macOS 用户要安装 Xcode，可以在 App Store 里直接搜索并安装一下它，完成以后打开 Xcode，再安装一些额外的工具。Windows 用户也需要安装一些编译工具。
