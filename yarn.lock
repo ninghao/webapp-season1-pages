@@ -1493,8 +1493,8 @@ dateformat@^2.0.0:
   resolved "http://registry.npm.taobao.org/dateformat/download/dateformat-2.0.0.tgz#2743e3abb5c3fc2462e527dca445e04e9f4dee17"
 
 deap@^1.0.0:
-  version "1.0.0"
-  resolved "http://registry.npm.taobao.org/deap/download/deap-1.0.0.tgz#b148bf82430a27699b7483a03eb6b67585bfc888"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/deap/-/deap-1.0.1.tgz#0646e9e1a095ffe8a9e404d68d1f76dcf57e66fb"
 
 debug-fabulous@0.0.X:
   version "0.0.4"
@@ -6023,9 +6023,9 @@ seek-bzip@^1.0.3:
   dependencies:
     commander "~2.8.1"
 
-semantic-ui@^2.2.10:
+semantic-ui@2.2.10:
   version "2.2.10"
-  resolved "http://registry.npm.taobao.org/semantic-ui/download/semantic-ui-2.2.10.tgz#3849094b0f9d1518a2976304b7afc749f43c1d40"
+  resolved "https://registry.yarnpkg.com/semantic-ui/-/semantic-ui-2.2.10.tgz#3849094b0f9d1518a2976304b7afc749f43c1d40"
   dependencies:
     better-console "*"
     del "^2.2.2"
@@ -6057,6 +6057,7 @@ semantic-ui@^2.2.10:
     gulp-watch "^4.3.11"
     jquery "^3.1.1"
     map-stream "^0.1.0"
+    merge-stream "^1.0.0"
     mkdirp "^0.5.1"
     require-dot-file "^0.4.0"
     run-sequence "^1.2.2"
